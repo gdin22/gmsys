@@ -8,7 +8,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.neuedu.mapper.BalanceMapper;
 import com.neuedu.mapper.UserAccountMapper;
+import com.neuedu.model.Balance;
 import com.neuedu.model.UserAccount;
 
 
@@ -16,13 +18,14 @@ import com.neuedu.model.UserAccount;
 @ContextConfiguration("classpath:config/spring-common.xml")//Spring整合JUnit4测试时，使用注解引入配置文件
 public class TestUserAccount {	
 	@Autowired
-	UserAccountMapper UserAccountMapper;
+	BalanceMapper balanceMapper;
 	
 	@Transactional
 	@Test
 	public void testFindUserByAccount() {
-		UserAccount userAccount = UserAccountMapper.findUserByAccount("admin");
-		System.out.println(userAccount.getUserName());
+		//Balance balance = UserAccountMapper.findUserByAccount("admin");
+		Balance balance = BalanceMapper.selectByPrimaryKey(11);
+		System.out.println(balance.getBname());
 	}
 
 }
