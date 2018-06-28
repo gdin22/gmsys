@@ -7,4 +7,5 @@ import com.neuedu.model.Balance;
 public interface BalanceService {
 
 	List<Balance> selectAll();
+	Balance selectByPrimaryKey(Integer bid);
 }

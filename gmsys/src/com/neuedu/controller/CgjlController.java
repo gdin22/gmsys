@@ -29,4 +29,16 @@ public class CgjlController {
 		}
 	}
 	
+	@RequestMapping("/cgjl/findById")
+	public String findById(String text, HttpSession session, Model model){
+		int id = Integer.parseInt(text);
+		Cgjl cg = cgjlService.selectByPrimaryKey(id);
+		
+		if(cg == null){
+			return "index";
+		}else{
+			model.addAttribute("Buy1", cg);
+			return "caigoudetails";
+		}
+	}
 }

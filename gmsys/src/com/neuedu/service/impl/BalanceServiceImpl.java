@@ -22,5 +22,10 @@ public class BalanceServiceImpl implements BalanceService{
 	public List<Balance> selectAll(){
 		return mapper.selectAll();
 	}
+	
+	@Override
+	public Balance selectByPrimaryKey(Integer bid){
+		return mapper.selectByPrimaryKey(bid);
+	}
 }
 

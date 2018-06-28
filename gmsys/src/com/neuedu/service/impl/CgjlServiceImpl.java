@@ -22,4 +22,9 @@ public class CgjlServiceImpl implements CgjlService{
 	public List<Cgjl> selectAll(){
 		return mapper.selectAll();
 	}
+	
+	@Override
+	public Cgjl selectByPrimaryKey(Integer buyid){
+		return mapper.selectByPrimaryKey(buyid);
+	}
 }

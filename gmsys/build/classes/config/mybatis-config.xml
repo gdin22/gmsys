@@ -12,7 +12,13 @@
   <mappers>
   	<mapper resource="com/neuedu/mapper/UserAccountMapper.xml"/> 
   	<mapper resource="com/neuedu/mapper/BuyMapper.xml"/>
-  	<mapper resource="com/neuedu/mapper/BalanceMapper.xml"/>	
+  	<mapper resource="com/neuedu/mapper/BalanceMapper.xml"/>
+  	<mapper resource="com/neuedu/mapper/BfjlMapper.xml"/>
+  	<mapper resource="com/neuedu/mapper/BxjlMapper.xml"/>
+  	<mapper resource="com/neuedu/mapper/CgjlMapper.xml"/>
+  	<mapper resource="com/neuedu/mapper/ProductMapper.xml"/>
+  	<mapper resource="com/neuedu/mapper/ProviderMapper.xml"/>
+  	<mapper resource="com/neuedu/mapper/TpjlMapper.xml"/>	
   </mappers>
 
 </configuration>

@@ -1,5 +1,5 @@
 <%@page import="java.util.Iterator"%>
-<%@page import="com.neuedu.model.Buy"%>
+<%@page import="com.neuedu.model.Cgjl"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.List" isELIgnored="false"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
@@ -359,7 +359,7 @@ function link(){
 <%--内容 --%>
         <div class="tpl-content-wrapper">
             
-            <form name="fom" id="fom" method="post">
+            <form name="fom" id="fom"  action="cgjl/findById.do" method="post">
 				  <table width="100%" border="0" cellspacing="0" cellpadding="0">
 				  <tr>
 				    <td height="30">      
@@ -384,7 +384,7 @@ function link(){
 				  </tr>
 				  
 				  <%
-									 	Buy ag=(Buy)request.getAttribute("Buy1");
+									 	Cgjl ag=(Cgjl)request.getAttribute("Buy1");
 										 
 										 
 									 %>
@@ -406,13 +406,8 @@ function link(){
 				    <td width="84%" colspan="2" bgcolor="#FFFFFF"><%=ag.getProvid() %></td>
 				  </tr>
 				   <tr>
-				  <td width="16%" height="20" align="right" bgcolor="#FFFFFF">产品编号：</td>
+				  <td width="16%" height="20" align="right" bgcolor="#FFFFFF">部门编号：</td>
 				   <td width="84%" colspan="2" bgcolor="#FFFFFF"><%=ag.getDepartid() %></td>
-				   
-				  </tr>
-				  <tr>
-				     <td width="16%" height="20" align="right" bgcolor="#FFFFFF">部门编号:</td>
-				      <td width="84%" colspan="2" bgcolor="#FFFFFF"><%=ag.getpRODID() %></td>
 				   
 				  </tr>
 				  </table></td>

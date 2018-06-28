@@ -7,4 +7,5 @@ import com.neuedu.model.Cgjl;
 public interface CgjlService {
 
 	List<Cgjl> selectAll();
+	Cgjl selectByPrimaryKey(Integer buyid);
 }

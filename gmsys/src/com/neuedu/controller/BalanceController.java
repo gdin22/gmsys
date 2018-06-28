@@ -28,4 +28,18 @@ public class BalanceController {
 			return "totalzc";
 		}
 	}
+	
+	@RequestMapping("/Balance/findById")
+	public String findById(String text ,HttpSession session, Model model){
+		int id = Integer.parseInt(text);
+		@SuppressWarnings("unchecked")
+		List<Balance> list = (List<Balance>) balanceService.selectByPrimaryKey(id);
+		
+		if(list == null) {
+			return "index";
+		}else {
+			model.addAttribute("listBalance", list);
+			return "totalzc";
+		}
+	}
 }

@@ -379,7 +379,7 @@ $(function(){
 <%--内容 --%>
         <div class="tpl-content-wrapper">
             
-            <form name="fom" id="fom" method="post">
+            <form name="fom" id="fom" action="/cgjl/findById.do" method="post">
 				<table width="100%" border="0" cellspacing="0" cellpadding="0">
 				
 				  <tr>
