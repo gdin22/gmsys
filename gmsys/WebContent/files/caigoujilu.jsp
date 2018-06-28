@@ -417,7 +417,6 @@ $(function(){
 				            <td width="12%" height="20" align="center" bgcolor="#EEEEEE">采购数量</td>
 				            <td width="12%" height="20" align="center" bgcolor="#EEEEEE">采购时间</td>
 				            <td width="12%" height="20" align="center" bgcolor="#EEEEEE">供应商编号</td>
-				            <td width="12%" height="20" align="center" bgcolor="#EEEEEE">产品编号</td>
 				            <td width="12%" height="20" align="center" bgcolor="#EEEEEE">部门编号</td>
 				            
 				           </tr>
@@ -434,12 +433,11 @@ $(function(){
 				           <tr>
 				
 				                    
-				                    <td bgcolor="#FFFFFF"><%=b.getBuyid1() %></td>
-				                    <td bgcolor="#FFFFFF"><%=b.getbuycount() %></td>
+				                    <td bgcolor="#FFFFFF"><%=b.getBuyid() %></td>
+				                    <td bgcolor="#FFFFFF"><%=b.getBuycount() %></td>
 				                    <td bgcolor="#FFFFFF"><%=b.getBuytime()  %></td>
 				                    <td bgcolor="#FFFFFF"><%=b.getProvid() %></td>
-				                    <td bgcolor="#FFFFFF"><%=b.getdepartid() %></td>
-				                    <td bgcolor="#FFFFFF"><%=b.getProdid() %></td>
+				                    <td bgcolor="#FFFFFF"><%=b.getDepartid() %></td>
 				
 				        
 				                   

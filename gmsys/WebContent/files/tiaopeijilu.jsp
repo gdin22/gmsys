@@ -441,7 +441,7 @@ $(function(){
 				                    <td bgcolor="#FFFFFF"><%=b.getTid() %></td>
 				                    <td bgcolor="#FFFFFF"><%=b.getTcount() %></td>
 				                    <td bgcolor="#FFFFFF"><%=b.getTrtime() %></td>
-				                    <td bgcolor="#FFFFFF"><%=b.getAreaid() %></td>
+				                    <td bgcolor="#FFFFFF"><%=b.getBid() %></td>
 				                    <td bgcolor="#FFFFFF"><%=b.getDepartid() %></td>
 				                 
 				           </tr> 

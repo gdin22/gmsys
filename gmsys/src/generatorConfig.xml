@@ -37,7 +37,7 @@
         </javaClientGenerator>
         
         <!--生成对应表及类名-->
-        <table tableName="balance" domainObjectName="Balance" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="true" selectByExampleQueryId="false">
+        <table tableName="product" domainObjectName="Product" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="true" selectByExampleQueryId="false">
             <property name="my.isgen.usekeys" value="true"/>
             <generatedKey column="id" sqlStatement="JDBC"/>       
         </table>

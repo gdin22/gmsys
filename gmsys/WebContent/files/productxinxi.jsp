@@ -422,7 +422,6 @@ function link(){
 				               <%
 				              		List<Product> list=(List<Product>)request.getAttribute("listProduct");
 				              		Iterator<Product> it=list.iterator();
-				              		System.out.println("+++++++++");
 				              		while(it.hasNext()){
 				              	
 				              			Product v=it.next();
@@ -434,7 +433,7 @@ function link(){
 								            <td bgcolor="#FFFFFF"><input type="checkbox" name="delid"/></td>
 				                    <td bgcolor="#FFFFFF"><%=v.getProdid() %></td>
 									          <td height="20" bgcolor="#FFFFFF"><%=v.getProdname() %></td>
-				                    <td bgcolor="#FFFFFF"><%=v.getBuycount() %></td>
+				                    <td bgcolor="#FFFFFF"><%=v.getProdcount() %></td>
 				                     <td bgcolor="#FFFFFF"><%=v.getProdcount() %></td>
 				                    <td height="20" bgcolor="#FFFFFF"><%=v.getProvid() %></td>
 				                    
