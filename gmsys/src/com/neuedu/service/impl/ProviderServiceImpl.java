@@ -22,4 +22,19 @@ public class ProviderServiceImpl implements ProviderService{
 	public List<Provider> selectAll(){
 		return mapper.selectAll();
 	}
+	
+	@Override
+	public Provider selectByPrimaryKey(Integer provid){
+		return mapper.selectByPrimaryKey(provid);
+	}
+	
+	@Override
+	public int updateByPrimaryKey(Provider record){
+		return mapper.updateByPrimaryKey(record);
+	}
+	
+	@Override
+	public int insert(Provider record){
+		return mapper.insert(record);
+	}
 }
