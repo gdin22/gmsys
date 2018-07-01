@@ -215,7 +215,7 @@ document.getElementById("aa").style.display="";
                                      <i class="am-icon-angle-right"></i>
                                         <span>资产录入</span>
                                      <i class="tpl-left-nav-content tpl-badge-primary"></i>
-                                <a href="../area/list.do">
+                                <a href="${pageContext.request.contextPath}/area/list.do">
                                      <i class="am-icon-angle-right"></i>
                                      <span>区域管理</span>
                                 </a>
@@ -350,7 +350,7 @@ document.getElementById("aa").style.display="";
 									  <tr>
 									  <td nowrap align="right" width="15%">资产分类编号:</td>
 									
-									    <td width="35%"><input name='cid' type="text" class="text" style="width:154px" value=" <%=c.getCid() %>" />
+									    <td width="35%"><input name='cid' type="text" class="text" style="width:154px" value="<%=c.getCid() %>" />
 								        <span class="red">*</span></td>
 									    <td nowrap align="right" width="15%">分类名称:</td>
 									    <td width="35%"><input name='cname' type="text" class="text" style="width:154px" value="<%=c.getCname()  %>" />

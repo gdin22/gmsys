@@ -265,7 +265,7 @@ function link(){
                                      <i class="am-icon-angle-right"></i>
                                         <span>资产录入</span>
                                      <i class="tpl-left-nav-content tpl-badge-primary"></i>
-                                <a href="../area/list.do" class="active">
+                                <a href="${pageContext.request.contextPath}/area/list.do" class="active">
                                      <i class="am-icon-angle-right"></i>
                                      <span>区域管理</span>
                                 </a>
@@ -425,10 +425,10 @@ function link(){
 				                  <!-- 使用jsp的标签技术显示数据，areaList是在控制器中保存数据的键名，area是一个临时的名称，它可以在循环中获取数据 -->
 				                  <c:forEach items="${areaList}" var="area">
 				                   <tr>
-								      <td bgcolor="#FFFFFF"><input type="checkbox" name="areaid" value="${area.areaId}"/></td>
-				                    <td bgcolor="#FFFFFF">${area.areaId}</td>
-									          <td height="20" bgcolor="#FFFFFF">${area.areaName }</td>
-				                    <td height="20" bgcolor="#FFFFFF">${area.relative==0?"集团":area.parent.areaName}</td>
+								      <td bgcolor="#FFFFFF"><input type="checkbox" name="areaid" value="${area.areaid}"/></td>
+				                    <td bgcolor="#FFFFFF">${area.areaid}</td>
+									          <td height="20" bgcolor="#FFFFFF">${area.areaname }</td>
+				                    <td height="20" bgcolor="#FFFFFF">${area.relative==0?"集团":area.parent.areaname}</td>
 									          <td bgcolor="#FFFFFF"><a href="<%=path%>/files/updatequyu.htm">编辑</a>&nbsp;|&nbsp;<a href="<%=path%>/files/quyudetails.html">查看</a></td>
 				                  </tr>
 				                  </c:forEach>
